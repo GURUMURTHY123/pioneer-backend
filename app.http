@@ -1,0 +1,23 @@
+###
+
+POST http://localhost:3000/register HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "Raghu",
+    "email": "raghu@gmail.com",
+    "password": "raghu@123"
+}
+
+###
+POST http://localhost:3000/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "Raghu",
+    "password": "raghu@123"
+}
+
+###
+GET http://localhost:3000/data-entries?category=Animals&limit=10 HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IlJhZ2h1IiwiaWF0IjoxNzExNjE0ODA2fQ.vjt_z_GRPMrKLJVdr19oiAUpxPGlY8lx9J5kz6qtvGg
